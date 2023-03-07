@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import logo from "../public/assets/logo.png";
+import Image from 'next/image';
 import { AiOutlineShopping } from "react-icons/ai";
 
 import { Cart } from "./";
@@ -13,7 +14,7 @@ const Navbar = () => {
     <div className="navbar-container">
       <p className="logo">
         <Link href="/">
-          <img src={logo} alt="JSM Headphones Logo" className="logo" />
+        <Image src={logo} alt="JSM Headphones" className="logo" width="98" height="44" />
         </Link>
       </p>
 
